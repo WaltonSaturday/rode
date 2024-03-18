@@ -56,12 +56,12 @@ const LightBackgroundBubbles: React.FC = () => {
       stride={3}
     >
       <PointMaterial
-        transparent={false}
+        transparent={true}
         color="#F6CDFA"
         size={0.1}
         sizeAttenuation={true}
         depthWrite={false}
-        alpha={1}
+        alpha={0.9}
       />
     </Points>
   );
