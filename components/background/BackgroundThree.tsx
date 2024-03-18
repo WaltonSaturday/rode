@@ -55,7 +55,7 @@ const createBubblePositions = (count: number, radius: number): Float32Array => {
 };
 
 const LightBackground: React.FC = () => {
-  const ref = useRef<Points>(null);
+  const ref = useRef<THREE.Points>(null);
   const [bubblePositions, setBubblePositions] = useState<Float32Array>(() =>
     createBubblePositions(500, 5)
   );
