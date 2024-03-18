@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  --line-color: #e5e7eb;
+}
+
+html.dark {
+  --line-color: rgba(255, 255, 255, 0.2);
+}
+
+.borderBlack {
+  @apply border border-black/10;
+}
+
+body {
+  font-family: 'InterVariable', 'InterStatic', sans-serif;
+}
+
+@layer utilities {
+  .bg-size-400 {
+    background-size: 400% 400%;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .animation-gradient {
+    animation: gradientAnimation 15s ease infinite;
+    background: linear-gradient(
+      270deg,
+      #f0abfc,
+      #f9a8d4,
+      #fda4af,
+      #d8b4fe,
+      /* #ff9a9e,
+      #fecfef,
+      #fe9a8b,
+      #ff9a9e */
+    );
+    background-size: 800% 800%;
+  }
+}
+
+@font-face {
+  font-family: 'InterVariable';
+  src: url('/fonts/Inter/Inter-VariableFont_slnt,wght.ttf')
+    format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterStatic';
+  src: url('/fonts/Inter/static/Inter-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterStatic';
+  src: url('/fonts/Inter/static/Inter-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterStatic';
+  src: url('/fonts/Inter/static/Inter-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'InterStatic';
+  src: url('/fonts/Inter/static/Inter-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
