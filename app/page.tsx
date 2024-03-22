@@ -9,10 +9,12 @@ import Skills from '@/components/Skills';
 import SocialMedia from '@/components/SocialMedia';
 import Services from '@/components/Services';
 import CallToAction from '@/components/CallToAction';
+import Banner from '@/components/Banner';
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center px-4 relative">
+      <Banner />
       <Intro />
       <SectionDivider />
       <SocialMedia />
