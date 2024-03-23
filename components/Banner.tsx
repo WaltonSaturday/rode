@@ -19,10 +19,10 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="z-[1] mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="z-[1] mb-28 max-w-[50rem] text-center sm:mb-40 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
-        <div className="relative">
+        <div className="relative px-4 w-screen max-w-[800px]">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -34,11 +34,12 @@ export default function Intro() {
             <Image
               src={rodeLogo}
               alt="Rosalie"
-              width="800"
-              height="400"
+              sizes="100vw"
               quality="95"
               priority={true}
-              className="h-[400px] w-[800px]   "
+              className="h-auto w-full   "
+              width={800}
+              height={400}
             />
           </motion.div>
         </div>

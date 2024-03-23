@@ -16,8 +16,9 @@ module.exports = {
         secondary: '#2a2a2a',
         light1: '#eae4e6', // Haupthintergrund leicht pink grau
 
-        light2: '#f0f0f0', // Hintergrund hervorgehoben
-        light3: '#e1e1e1', // Hintergrund Hover
+        light2: '#d1c3c8', // Hintergrund hervorgehoben
+        light3: '#d1c3c8', // Hintergrund Hover
+
         dark1: '#323232', // Haupthintergrund sehr dunkel
 
         dark2: '#232323', // Hintergrund hervorgehoben grau
