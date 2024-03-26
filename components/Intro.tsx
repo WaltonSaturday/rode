@@ -34,11 +34,11 @@ export default function Intro() {
             <Image
               src={portraitImg}
               alt="Rosalie"
-              width="220"
-              height="220"
+              width="320"
+              height="320"
               quality="95"
               priority={true}
-              className="h-40 w-40 rounded-full object-cover border-[0.35rem] border-white/60 shadow-xl"
+              className="h-60 w-60 rounded-full object-cover border-[0.35rem] border-white/60 shadow-xl"
             />
           </motion.div>
 
